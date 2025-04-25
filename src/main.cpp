@@ -81,7 +81,7 @@ void connect_wifi() {
 
   if (WiFi.status() == WL_CONNECTED) {
     Serial.println("\n✅ Connecté à Geoclimair");
-    mqtt_ip = mqtt_ip_geoclimair;
+    mqtt_ip = mqtt_ip_serveur1;
     return;
   }
 
@@ -97,7 +97,7 @@ void connect_wifi() {
 
   if (WiFi.status() == WL_CONNECTED) {
     Serial.println("\n✅ Connecté à Livebox");
-    mqtt_ip = mqtt_ip_livebox;
+    mqtt_ip = mqtt_ip_serveur2;
     return;
   }
 
